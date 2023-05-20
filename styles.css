@@ -94,13 +94,18 @@ card-container-section = work */
   /* Bottom Section */
 .bottom-section {
     display: flex;
+    width: 100vw
   }
 .contact-me{
+  flex: 1;
     background-color: #28183a;
+
 }
 
 .about-me{
+    flex: 1;
     background-color: #08270f;
+
 }
 
 .contact-me, .about-me{
