@@ -1,1 +1,160 @@
 
+/* hero-text = text_container
+black-box-section = black_box
+card-content = card-container
+card-container-section = work */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  
+ 
+  .hero-section {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80') center/cover no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .hero-text{
+    color: rgb(225, 225, 0);
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-left: 20px;
+  }
+  .main-text{
+    font-size: 50px;
+    font-weight: 650;
+  }
+  
+
+  .black-box-section {
+    background-color: #000;
+    padding: 10px;
+    margin-top: 1px;
+  }
+  .black-box-section h3 {
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(161, 187, 164);
+  }
+  .black-box-section h3 span{
+    font-weight: 400;
+    font-size: 96px;
+    color: white;
+  }
+  
+
+  
+  .card-container-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 50px auto;
+    
+  }
+  .card {
+    max-width: 340px;
+    height: 400px;
+    border-radius:20px;
+    box-shadow: 12px 14px 14px rgba(30, 8, 129, 0.2);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+
+  .grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-content{
+    padding: 20px;
+  }
+  .card-content h3{
+    margin-bottom: 15px;
+  }
+
+  
+  /* Bottom Section */
+.bottom-section {
+    display: flex;
+  }
+.contact-me{
+    background-color: #28183a;
+}
+
+.about-me{
+    background-color: #08270f;
+}
+
+.contact-me, .about-me{
+    min-height: 200px;
+    padding: 32px;
+    color: white;
+    text-align: center;
+}
+
+.about-me p, .contact-me p{
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-family: serif;
+}
+.about-me h2, .contact-me h2{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: italic;
+
+}
+
+
+
+@media (max-width:786px){
+  .hero-section{
+      min-height: 50vh;
+  }
+  .hero-text{
+      padding: 10px;
+      text-align: center;
+  }
+  .main-text{
+      font-size: 32px;
+  }
+  .black-box-section h3{
+      font-size: 24px;
+  }
+  .black-box-section h3 span{
+      font-weight: 400;
+      font-size: 24px;
+  }
+  .bottom-section{
+      flex-direction: column;
+  }
+  h1{
+      font-size: 32px;
+  }
+  .about-me h2, .contact-me h2{
+      font-size: 24px;
+  }
+
+}
+
+
+
+
+
